@@ -19,14 +19,22 @@ class HotelService
     public function create(array $hotel)
     {
          try {
-             $createdHotel = DB::transaction(function () use ($hotel) {
+
+             if ($hotel['reputation'] <= 500)
+                 $reputationBadge = 'red';
+             elseif ($hotel['reputation'] <=799)
+                 $reputationBadge = 'yellow';
+             else
+                 $reputationBadge = 'green';
+
+             $createdHotel = DB::transaction(function () use ($hotel, $reputationBadge) {
                 $hotelData = [
                     'name'  => $hotel['name'],
                     'rating'  => $hotel['rating'],
                     'category'  => $hotel['category'],
                     'image'  => $hotel['image'],
                     'reputation'  => $hotel['reputation'],
-                    'reputationBadge'  => $hotel['reputationBadge'],
+                    'reputationBadge'  => $reputationBadge,
                     'price'  => $hotel['price'],
                     'availability'  => $hotel['availability'],
                 ];

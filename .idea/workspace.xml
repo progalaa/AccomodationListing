@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11b88529-f78e-416b-95e0-f1fbebb9a877" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreateHotelRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" afterDir="false" />
@@ -48,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateHotelRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+            <state relative-caret-position="310">
+              <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
               <folding>
                 <element signature="e#37#80#0#PHP" expanded="true" />
               </folding>
@@ -296,7 +297,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582798347022</updated>
       <workItem from="1582798348302" duration="11825000" />
-      <workItem from="1583050902477" duration="3106000" />
+      <workItem from="1583050902477" duration="3349000" />
     </task>
     <task id="LOCAL-00001" summary="Added Migrations and models">
       <created>1582800561554</created>
@@ -340,11 +341,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582808651181</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added CreateHotelRequest custom validation request">
+      <created>1583054414637</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583054414637</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14931000" />
+    <option name="totallyTimeSpent" value="15174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="25" width="1311" height="743" extended-state="6" />
@@ -383,7 +391,8 @@
     <MESSAGE value="Added hotels resource and get all hotels route" />
     <MESSAGE value="Added exception handler" />
     <MESSAGE value="Store hotel details with location" />
-    <option name="LAST_COMMIT_MESSAGE" value="Store hotel details with location" />
+    <MESSAGE value="Added CreateHotelRequest custom validation request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CreateHotelRequest custom validation request" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Repositories/HotelRepositoryRepositoryEloquent.php" />
@@ -525,8 +534,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateHotelRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        <state relative-caret-position="310">
+          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
           <folding>
             <element signature="e#37#80#0#PHP" expanded="true" />
           </folding>

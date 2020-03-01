@@ -12,7 +12,6 @@
     
 ## How to Execute code    
    * you must have composer installed in your machine.
-   * Clone the project throught git clone https://github.com/progalaa/AccomodationListing.git
    * cpy .env.example to .env 
    * create database and add database credentials to .env file
    * run composer install

@@ -55,4 +55,11 @@ class HotelController extends Controller
 
         return ($hotel) ? response()->json(['success' => true]) : false;
     }
+
+    public function bookAccommodation($id)
+    {
+        $booked = $this->hotelService->bookAccommodation($id);
+
+        return ($booked) ? response()->json(['success' => true]) : response()->json(['success' => false], 400);
+    }
 }

@@ -94,4 +94,24 @@ class HotelServiceTest extends TestCase
         $this->assertTrue($delete);
         $this->assertEmpty(Hotel::all());
     }
+
+    /** @test */
+    public function it_can_book_a_hotel()
+    {
+        $hotel = factory('App\Hotel')->create();
+
+        $booked = $this->hotelService->bookAccommodation($hotel->id);
+
+        $this->assertTrue($booked);
+    }
+
+    /** @test */
+    public function it_failed_to_book_a_hotel()
+    {
+        $hotel = factory('App\Hotel')->create(['availability' => 0]);
+
+        $booked = $this->hotelService->bookAccommodation($hotel->id);
+
+        $this->assertFalse($booked);
+    }
 }

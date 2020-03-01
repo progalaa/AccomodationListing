@@ -14,3 +14,4 @@ use Illuminate\Http\Request;
 */
 
 Route::resource('hotels', 'HotelController');
+Route::post('hotels/{id}/book', 'HotelController@bookAccommodation');

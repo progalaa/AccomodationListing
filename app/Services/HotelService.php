@@ -96,4 +96,13 @@ class HotelService
             throw new UnExpectedException();
         }
     }
+
+    public function bookAccommodation($id)
+    {
+        try {
+            return $this->hotelRepository->bookAccommodation($id);
+        } catch (\Throwable $th) {
+            throw new UnExpectedException();
+        }
+    }
 }

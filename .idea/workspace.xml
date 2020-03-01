@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11b88529-f78e-416b-95e0-f1fbebb9a877" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HotelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/HotelRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/HotelRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/HotelService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/HotelService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/HotelServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/HotelServiceTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="11b88529-f78e-416b-95e0-f1fbebb9a877" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/app/Services/HotelService.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="e#33#72#0#PHP" expanded="true" />
               </folding>
@@ -308,7 +301,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582798347022</updated>
       <workItem from="1582798348302" duration="11825000" />
-      <workItem from="1583050902477" duration="10346000" />
+      <workItem from="1583050902477" duration="11460000" />
     </task>
     <task id="LOCAL-00001" summary="Added Migrations and models">
       <created>1582800561554</created>
@@ -387,14 +380,22 @@
       <option name="project" value="LOCAL" />
       <updated>1583072399139</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Booking API and tests">
+      <created>1583074084786</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1583074084787</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22171000" />
+    <option name="totallyTimeSpent" value="23285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="25" width="1311" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.2173913" />
       <window_info id="Structure" order="1" sideWeight="0.50162864" side_tool="true" weight="0.24110672" />
@@ -433,7 +434,8 @@
     <MESSAGE value="Save $reputationBadge value in the request" />
     <MESSAGE value="Added Factory" />
     <MESSAGE value="Added CRUD unit testing and factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CRUD unit testing and factory" />
+    <MESSAGE value="Added Booking API and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Booking API and tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Repositories/HotelRepositoryRepositoryEloquent.php" />
@@ -631,7 +633,7 @@
     <entry file="file://$PROJECT_DIR$/app/Services/HotelService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
           <folding>
             <element signature="e#33#72#0#PHP" expanded="true" />
           </folding>

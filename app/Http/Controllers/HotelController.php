@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateHotelRequest;
 use App\Http\Resources\HotelCollection;
 use App\Http\Resources\HotelResource;
 use App\Services\HotelService;
@@ -26,7 +27,7 @@ class HotelController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(CreateHotelRequest $request)
     {
         $hotel = $this->hotelService->create($request->all());
 
@@ -43,7 +44,9 @@ class HotelController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+        $hotel = $this->hotelService->updateHotel($request->all(), $id);
+
+        return ($hotel) ? response()->json(['success' => true]) : false;
     }
 
     public function destroy($id)

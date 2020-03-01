@@ -49,6 +49,16 @@ class HotelService
          }
     }
 
+    public function updateHotel($hotel, $id)
+    {
+        try {
+            $updatedHotel = $this->hotelRepository->update($hotel, $id);
+
+            return !!$updatedHotel;
+        } catch (\Throwable $th) {
+            throw new UnExpectedException();
+        }
+    }
 
     public function getHotels()
     {

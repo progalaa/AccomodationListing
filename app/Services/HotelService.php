@@ -39,14 +39,16 @@ class HotelService
                     'availability'  => $hotel['availability'],
                 ];
                  $createdHotel = $this->hotelRepository->create($hotelData);
-                 $locationData = [
-                    'city' => $hotel['location']['city'],
-                    'state' => $hotel['location']['state'],
-                    'country' => $hotel['location']['country'],
-                    'zip_code' => $hotel['location']['zipCode'],
-                    'address' => $hotel['location']['address'],
-                 ];
-                 $createdHotel->location()->create($locationData);
+                 if (isset($hotel['location'])) {
+                     $locationData = [
+                         'city' => $hotel['location']['city'],
+                         'state' => $hotel['location']['state'],
+                         'country' => $hotel['location']['country'],
+                         'zip_code' => $hotel['location']['zipCode'],
+                         'address' => $hotel['location']['address'],
+                     ];
+                     $createdHotel->location()->create($locationData);
+                 }
 
                  return $createdHotel;
              });

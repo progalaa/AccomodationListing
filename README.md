@@ -19,13 +19,17 @@
    * run php artisan config:cache && clear
    * run php artisan serve to serve your application.
    * to run unit testing use vendor/bin/phpunit
+   * Or you can run make to run MakeFile
    
  ## Available routes.
    * to get all hotels use GET `app_url/api/hotels` 
    * to get one hotel GET `app_url/api/hotels/{id}`
    * to delete hotel DELETE `app_url/api/hotels/{id}`
    * to update hotel PUT `app_url/api/hotels/{id}` and send data in the body
-   * to save hotel POST `app_url/api/hotels` and send data in the body
+   * to save hotel POST `app_url/api/hotels` and send data in the body.
+   * you can run app using `make` command to run MakeFile
+   * caching used by l5-repository by default.
+   * you can run phpstan by `vendor/bin/phpstan analyse app`
         
         
    
